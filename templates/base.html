@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
-{% include 'head.html' %}
 
-<body>
-    {% include 'header.html' %}
+{%  include 'head.html' %}
 
-    <hr>
+<body style="font-family: 'NaumSquareR">
 
-    {% block content %}
-    {% endblock %}
+{%  include 'header.html' %}
 
-    <hr>
 
-    {% include 'footer.html' %}
+
+<hr>
+
+{%  block content %}
+{%  endblock %}
+
+<hr>
+
+{%  include 'footer.html' %}
+
 </body>
 </html>
