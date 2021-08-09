@@ -39,8 +39,7 @@
     <div class="text-center my-4">
         {#  댓글  #}
         {%  for comment in target_article.comment.all %}
-            <div style="border:solid; border-color : #b0b0b0; text-align: left;border-radius: 1rem; margin : 1rem 0;
-                        padding : 1rem; font-size: 1.1rem;">
+            <div class="comment_box">
                 <div>
                     <span style="font-size:1.3rem;" class="NNS_B">
                         {{  comment.writer.profile.nickname }}
