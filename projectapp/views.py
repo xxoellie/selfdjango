@@ -39,7 +39,7 @@ class ProjectDetailView(DetailView, MultipleObjectMixin):
 
         if user.is_authenticated:
             subscription = Subscription.objects.filter(user=user, project=project)
-            
+
         else :
             subscription = None
 
